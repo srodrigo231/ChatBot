@@ -7,6 +7,9 @@ intents:
   - deny
   - bot_challenge
 
+actions:
+  - action_greet_depends_hour
+
 responses:
   utter_greet:
   - text: "Hola! soy un Bot que te ayudara en la gestión de tus turnos, dime que deseas realizar?"
@@ -15,8 +18,8 @@ responses:
   - text: "Adiós!"
   - text: "Chau!"
   - text: "Hasta pronto!"
-  - text: "Hasta luego.."
-  
+  - text: "Hasta luego."
+
   utter_iamabot:
   - text: "Soy un bot que te ayudara con la gestión de tus turnos"
 

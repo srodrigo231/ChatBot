@@ -5,6 +5,7 @@ nlu:
   examples: |
     - hola
     - buenos dias
+    - buen dia
     - buenas tardes
     - buenas noches
     - buendia
