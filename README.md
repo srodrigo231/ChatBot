@@ -21,3 +21,9 @@ Chatbot with RASA with Spanish support.
 
 ### Rasa Multi session support
     Rasa frameworlk support a session user a long 60 minutes by default.
+
+### Rasa Stress test
+    To make stress test you would use this [tool]. (https://github.com/salgieri/rasa-locust-stress-test)
+
+### Multilengual Support
+    A futute feature is the bilingual support (es/en). this is an [example] (https://gitlab.com/langnerd/chatbot-engine) but with previous Rasa versions
