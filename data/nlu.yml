@@ -47,7 +47,26 @@ nlu:
 
 - intent: bot_challenge
   examples: |
-    - eres un bot
-    - eres un humano
-    - estoy hablando con un bot
-    - estoy hablando con un humano
+    - eres un bot?
+    - eres un humano?
+    - estoy hablando con un bot?
+    - estoy hablando con un humano?
+
+- intent: consult_next_shift_depends_hour
+  examples: |
+    - horario de mi proximo [turno]{"entity":"singular_or_plural_element", "value":"elements_names"}?
+    - que hora empiezan mis siguientes [turnos] {"entity":"singular_or_plural_element", "value":"elements_names"}?
+    - siguiente [shift]{"entity":"singular_or_plural_element", "value":"elements_names"}
+
+- intent: consult_today_shifts
+  examples: |
+    - muestrame los turnos de [hoy](date)
+    - turnos de [mañana](date)
+    - mis turnos de [pasado mañana](date)
+
+- synonym : elements_names
+  examples: |
+    - turno
+    - shift
+    - turnos
+    - shifts

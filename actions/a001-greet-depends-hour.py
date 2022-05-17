@@ -27,4 +27,4 @@ class ActionGreetDependsHour(Action):
         else:
             greet_time = NIGHT_GREETING
         dispatcher.utter_message(text=f'{greet_time}. {IAMBOT} y {DESC}, {SKILL_DESC} {QUES1}')
-        return []
+        return []  # edit to return json response

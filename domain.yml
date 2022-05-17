@@ -10,6 +10,10 @@ intents:
 actions:
   - action_greet_depends_hour
 
+entities:
+  - singular_or_plural_element
+  - date
+
 responses:
   utter_greet:
   - text: "Hola! soy un Bot que te ayudara en la gestión de tus turnos, dime que deseas realizar?"
@@ -25,4 +29,13 @@ responses:
 
 session_config:
   session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  carry_over_slots_to_new_session: false # to avoid use the slots used on a previous session 
+
+forms:
+  simple_next_shifts_request_form:
+    requested slot:
+      - singular_or_plural_element
+  
+  simple_shits_depends_date:
+    requested slot:
+      - date
